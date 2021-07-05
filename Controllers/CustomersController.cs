@@ -9,7 +9,7 @@ using Microsoft.Net.Http.Headers;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 
-namespace RangeEtagsLastUpdate.Controllers
+namespace RangeEtagsLastModified.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

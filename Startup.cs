@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace RangeEtagsLastUpdate
+namespace RangeEtagsLastModified
 {
     public class Startup
     {
@@ -27,7 +27,7 @@ namespace RangeEtagsLastUpdate
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "RangeEtagsLastUpdate", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "RangeEtagsLastModified", Version = "v1" });
             });
         }
 
@@ -38,7 +38,7 @@ namespace RangeEtagsLastUpdate
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RangeEtagsLastUpdate v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RangeEtagsLastModified v1"));
             }
 
             app.UseStaticFiles(new StaticFileOptions()

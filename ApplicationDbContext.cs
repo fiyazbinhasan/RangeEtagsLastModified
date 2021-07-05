@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace RangeEtagsLastUpdate
+namespace RangeEtagsLastModified
 {
     public class ApplicationDbContext : DbContext
     {

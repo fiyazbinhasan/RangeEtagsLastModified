@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "RangeEtagsLastUpdateInAction": {
+    "RangeEtagsLastModified": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "index.html",

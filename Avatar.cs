@@ -2,7 +2,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace RangeEtagsLastUpdate
+namespace RangeEtagsLastModified
 {
     public class Avatar
     {

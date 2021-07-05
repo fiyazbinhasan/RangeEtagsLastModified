@@ -2,7 +2,7 @@
 using Microsoft.Net.Http.Headers;
 using System;
 
-namespace RangeEtagsLastUpdate.Controllers
+namespace RangeEtagsLastModified.Controllers
 {
     [Route("api/[controller]")]
     public class DocumentationController : ControllerBase

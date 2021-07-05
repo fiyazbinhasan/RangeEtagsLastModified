@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6</TargetFramework>
-    <UserSecretsId>aspnet-RangeEtagsLastUpdateInAction-74850F6E-DB31-4F51-9B5C-1184EEEB5EB8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
