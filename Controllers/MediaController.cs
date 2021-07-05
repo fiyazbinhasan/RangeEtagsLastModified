@@ -5,7 +5,7 @@ using System;
 namespace RangeEtagsLastModified.Controllers
 {
     [Route("api/[controller]")]
-    public class DocumentationController : ControllerBase
+    public class MediaController : ControllerBase
     {
         [HttpGet("download")]
         public IActionResult Download()

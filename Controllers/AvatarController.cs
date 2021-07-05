@@ -4,7 +4,6 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
-using System.Text;
 using Microsoft.Net.Http.Headers;
 using System.IO;
 using Microsoft.AspNetCore.Http;
@@ -13,12 +12,12 @@ namespace RangeEtagsLastModified.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class AvatarsController : ControllerBase
+    public class AvatarController : ControllerBase
     {
         private readonly ApplicationDbContext _contenxt;
         private readonly IMemoryCache _cache;
 
-        public AvatarsController(ApplicationDbContext context, IMemoryCache cache)
+        public AvatarController(ApplicationDbContext context, IMemoryCache cache)
         {
             _contenxt = context;
             _cache = cache;
