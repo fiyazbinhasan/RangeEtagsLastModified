@@ -46,11 +46,11 @@ namespace RangeEtagsLastModified
             {
                 OnPrepareResponse = ctx =>
                 {
-                    ctx.Context.Response.Headers.Append("Cache-Control", "private,max-age=100");
+                    ctx.Context.Response.Headers.Remove("ETag");
+                    ctx.Context.Response.Headers.Remove("Last-Modified");
+                    ctx.Context.Response.Headers.Append("Cache-Control", "private,max-age=10");
                 }
             });
-
-            app.UseDefaultFiles();
 
             app.UseRouting();
 
