@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Net.Http.Headers;
-using System;
 
 namespace RangeEtagsLastModified.Controllers
 {
@@ -13,10 +11,7 @@ namespace RangeEtagsLastModified.Controllers
         {
             return File("/assets/guitar.mp3", 
                 "audio/mpeg", 
-                "guitar.mp3",
-                lastModified: DateTime.UtcNow.AddSeconds(-5),
-                entityTag: new EntityTagHeaderValue($"\"{Convert.ToBase64String(Guid.NewGuid().ToByteArray())}\""),
-                enableRangeProcessing: true);
+                "guitar.mp3");
         }
     }
 }
